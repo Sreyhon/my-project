@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">My Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div>
+                <h1>Hello, I'm <span>Sreyhon</span></h1>
+                <p>Web Developer | Student | IT Enthusiast</p>
+                <button onclick="showMessage()">Contact Me</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <img src="image/images.jpg" alt="Profile photo of Sreyhon">
+                <p>
+                    I am an IT student interested in web development,
+                    programming and technology. I enjoy learning new
+                    technologies and creating useful applications.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Creating structured web pages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Designing responsive and attractive websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction and functionality.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Programming</h3>
+                    <p>Developing applications and solving problems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A project for managing student information
+                        and grades.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A responsive personal portfolio website
+                        created using HTML, CSS and JavaScript.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Web Application</h3>
+                    <p>
+                        A web project created as part of my IT studies.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form onsubmit="submitForm(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sreyhon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
